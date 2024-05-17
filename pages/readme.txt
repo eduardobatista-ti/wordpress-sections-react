@@ -6,8 +6,12 @@ Esses códigos são feitos para inserir no elemento HTML do elementor. Eu utiliz
 
 ###########Observações importantes ###################
 
-A função sempre precisa ser executada, isso é óbvio. 
-Maneiras que mais utilizo:
-<button onclick="showContainer(1)"><a>Clique aqui</a></button>
+## As seções dinâmicas precisam ter ##
+ID: container1 (container2, container3, container4, assim respectivamente)
+Class: content-container
+
+## A tela de loading precisa ter ##
+ID: skeleton-container
+Class: content-container
 
 

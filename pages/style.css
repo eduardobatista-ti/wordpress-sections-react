@@ -22,6 +22,15 @@ a {
     cursor: pointer;
 }
 
+.btn-container {
+    cursor: pointer;
+    color: #000 !important;
+}
+
+.btn-container-ativo {
+    cursor: pointer;
+}
+
 
 
 

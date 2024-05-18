@@ -36,28 +36,34 @@
     showContainer(activeContainer); // Exibe o container ativo quando a página for carregada
 };
 
-    //// Botões 
+// Adicionando eventos de clique aos botões
+document.getElementById('btn-container1').addEventListener('click', function() {
+    showContainer(1);
+    changeButtonClass(this);
+});
 
-    //botao 1
-    document.getElementById('btn-container1').addEventListener('click', function() {
-        showContainer(1);
-        changeButtonClass(this);
-        });
+document.getElementById('btn-container2').addEventListener('click', function() {
+    showContainer(2);
+    changeButtonClass(this);
+});
 
-    //botao 2
-    document.getElementById('btn-container2').addEventListener('click', function() {
-        showContainer(2);
-        changeButtonClass(this);
-        });
+// Função que troca a classe do botão e o atributo data-clicked
+function changeButtonClass(button) {
+    // Seleciona todos os botões
+    var buttons = document.querySelectorAll('.btn-container, .btn-container-ativo');
 
+    // Remove a classe 'btn-container-ativo' e o atributo 'data-clicked' de todos os botões
+    buttons.forEach(function(btn) {
+        btn.classList.remove('btn-container-ativo');
+        btn.classList.add('btn-container');
+        btn.removeAttribute('data-clicked');
+    });
 
-
-
-    // Função que troca a classe do botão
-        function changeButtonClass(button) {
-            button.classList.remove('btn-container');
-            button.classList.add('btn-container-ativo');
-        }
+    // Adiciona a classe 'btn-container-ativo' e o atributo 'data-clicked' ao botão clicado
+    button.classList.remove('btn-container');
+    button.classList.add('btn-container-ativo');
+    button.setAttribute('data-clicked', 'true');
+}
 
 
 </script>

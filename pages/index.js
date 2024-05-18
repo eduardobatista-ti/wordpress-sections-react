@@ -36,14 +36,28 @@
     showContainer(activeContainer); // Exibe o container ativo quando a página for carregada
 };
 
+
+//Botões aqui ###################
+
+
+
 // Adicionando eventos de clique aos botões
 document.getElementById('btn-container1').addEventListener('click', function() {
+    if (this.getAttribute('data-clicked') === 'true') return;
     showContainer(1);
     changeButtonClass(this);
 });
 
 document.getElementById('btn-container2').addEventListener('click', function() {
+    if (this.getAttribute('data-clicked') === 'true') return;
     showContainer(2);
+    changeButtonClass(this);
+});
+
+// Adicione aqui mais eventos de clique para outros botões
+document.getElementById('btn-container3').addEventListener('click', function() {
+    if (this.getAttribute('data-clicked') === 'true') return;
+    showContainer(3);
     changeButtonClass(this);
 });
 
@@ -64,6 +78,5 @@ function changeButtonClass(button) {
     button.classList.add('btn-container-ativo');
     button.setAttribute('data-clicked', 'true');
 }
-
 
 </script>

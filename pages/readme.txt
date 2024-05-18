@@ -4,7 +4,7 @@ Fiz esses códigos para mostrar containers de forma dinâmica no Elemento Wordpr
 
 Esses códigos são feitos para inserir no elemento HTML do elementor. Eu utilizo uma boa prática de sempre adicionar um container no final da página, com margin e padding zerados, dentro desse container, eu adiciono um elemento HTML também com margin e padding zerados. Sempre que vou adicionar um CSS eu adiciono no CSS adicional do elemento HTML, para não misturar códigos durando o desenvolvimento da página.
 
-###########Observações importantes ###################
+########### Observações importantes dos containers ###################
 
 ## As seções dinâmicas precisam ter ##
 ID: container1 (container2, container3, container4, assim respectivamente)
@@ -15,3 +15,8 @@ ID: skeleton-container
 Class: content-container
 
 
+########### Observações importantes dos botões ###################
+
+## Os botões precisam ter ##
+ID: btn-container1 (btn-container1, btn-container2, btn-container3, e assim respectivamente)
+Class: btn-container

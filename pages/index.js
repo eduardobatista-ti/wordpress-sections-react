@@ -64,7 +64,7 @@ document.getElementById('btn-container3').addEventListener('click', function() {
 // Função que troca a classe do botão e o atributo data-clicked
 function changeButtonClass(button) {
     // Seleciona todos os botões
-    var buttons = document.querySelectorAll('.btn-container, .btn-container-ativo');
+    let buttons = document.querySelectorAll('.btn-container, .btn-container-ativo');
 
     // Remove a classe 'btn-container-ativo' e o atributo 'data-clicked' de todos os botões
     buttons.forEach(function(btn) {
